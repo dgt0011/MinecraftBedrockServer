@@ -22,7 +22,7 @@ RandNum=$(echo $((1 + $RANDOM % 5000)))
 # The servers will be separated by their name/label into folders
 DirName=$(readlink -e ~)
 if [ -z "$DirName" ]; then
-  DirName=~
+  DirName=/mnt
 fi
 
 # Function to read input from user with a prompt
